@@ -18,7 +18,7 @@ app.get('/', (req, res)=>{
 
 
 
-mongoose.connect("mongodb+srv://<username>:<password>@backenddb.jwtwiji.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("mongodb+srv://<username>:<password>@backenddb.jwtwiji.mongodb.net/<clustername>?retryWrites=true&w=majority&appName=BackendDB")
 .then(()=>{
     app.listen(3000,()=>{
         console.log("Server is runnning at port 3000")
